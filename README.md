@@ -1,2 +1,0 @@
-# retrospectivestarterkit
-Retrospective Starter Kit
