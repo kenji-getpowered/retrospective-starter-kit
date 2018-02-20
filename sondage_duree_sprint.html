@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113478769-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113478769-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Résultat sondage durée des sprints</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- Fontastic Custom icon font-
+  <link rel="stylesheet" href="css/fontastic.css
+  <!-- Google fonts - Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <!-- jQuery Circle--
+  <link rel="stylesheet" href="css/.0.0.min.css">
+
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {
+      'packages': ['corechart', 'table']
+    });
+    google.charts.setOnLoadCallback(initialize);
+
+    /**
+     *
+     * @param columns an array of columns to be selected
+     */
+    function getQuery(...columns) {
+      return encodeURIComponent('select ' + columns.join(","));
+    }
+
+    function initialize() {
+      var opts = {
+        sendMethod: 'auto'
+      };
+
+      let document = 'https://docs.google.com/spreadsheets/d/1WXWfi3gcNqzBN9YUoTWfRfXhlSTAUbmHMrcepQ0m9jY/gviz/tq?tq=';
+      let gid = '&gid=0';
+
+      // ------------------------------
+
+      const createQueryResponseHandler = id => response => handleQueryResponse(response, id);
+      const createQueryCommentsResponseHandler = id => response => handleCommentsQueryResponseData(response, id);
+
+      const initTeam = (name, id, legend, ...columns) => {
+        const query = new google.visualization.Query(document + getQuery(columns) + gid, opts);
+        query.send(createQueryResponseHandler(id, legend));
+      };
+
+      const reqComments = encodeURIComponent(`select SUM(C) `);
+      const queryComment = new google.visualization.Query(document + reqComments + gid, opts);
+
+      queryComment.send(createQueryCommentsResponseHandler());
+
+      initTeam('SPRINT', 'current_sprint_duration', 'Quelle durée de sprints pratiquez vous actuellement?', 'B', 'C');
+      initTeam('SPRINT', 'desired_sprint_duration', 'Quelle durée de sprints aimeriez vous pratiquer?', 'B', 'D');
+    }
+
+    function handleQueryResponse(response, divId, legend) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var options = {
+        title: legend,
+        legend: {
+          position: 'none'
+        },
+      };
+
+      var data = response.getDataTable();
+      var chart = new google.visualization.ColumnChart(document.getElementById(divId));
+      chart.draw(data);
+    }
+
+    function createQueryResponseHandler(id, legend) {
+      return function(response) {
+        handleQueryResponse(response, id, legend);
+      }
+    }
+
+    function handleCommentsQueryResponseData(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+      var data = response.getDataTable();
+
+      document.getElementById('number_sprint_duration').innerHTML = "Nombre de réponse : " + data.getFormattedValue(0, 0);
+
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Side Navbar -->
+  <nav class="side-navbar">
+
+  </nav>
+  <div class="page">
+    <!-- navbar-->
+    <!-- Header Section-->
+    <section class="dashboard-header section-padding">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-md-stretch">
+          <div class="col-lg-9 col-md-12 flex-lg-last flex-md-first align-self-baseline">
+            <div class="card sales-report">
+              <h3 class="display h4" id="number_sprint_duration"> </h3
+              </div>
+            </div>
+          </div>
+          <!-- Line Chart -->
+          <div class="col-lg-6 col-md-6 flex-lg-last flex-md-first align-self-baseline">
+            <div class="card sales-report">
+              <h3 class="display h4">Quelle durée de sprint pratiquez vous actuellement?</h3>
+              <div id="current_sprint_duration">
+              </div>
+            </div>
+          </div>
+
+          <!-- To Do List-->
+          <div class="col-lg-6 col-md-6">
+            <div class="card to-do">
+              <h3 class="display h4">Quelle durée de sprint aimeriez vous pratiquer?</h3>
+              <div id="desired_sprint_duration"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+</body>
+
+</html>
