@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113478769-1"></script>
-<script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113478769-1"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -12,212 +12,613 @@
 </script>
 
 
-	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author"      content="Mikael KROK">
+<meta charset="utf-8">
+<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author"      content="Mikael KROK">
 
-	<title>Retrospective Starter Kit</title>
+<title>Retrospective Starter Kit</title>
 
-	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
-	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-	<!-- Custom styles for our template -->
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
-	<link rel="stylesheet" href="assets/css/main.css">
+<!-- Custom styles for our template -->
+<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+<link rel="stylesheet" href="assets/css/main.css">
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
 
 </head>
 
 <body class="home">
-	<!-- Fixed navbar -->
-	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
-		<div class="container">
-			<div class="navbar-header">
-				<!-- Button for smallest screens -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="index.html">Acceuil</a></li>
-					<li><a href="presentation.html">Présentation</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rétrospectives<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-                     <li class="section">Rétrospectives : le passé</li>
-					 <li><a href="retrospectives.html#sailboat">Sailboat</a></li>
-                     <li><a href="retrospectives.html#hot-air-balloon">Hot-air Balloon</a></li>
-                     <li><a href="retrospectives.html#glad-sad-mad">Glad, Sad, Mad</a></li>
-                     <li><a href="retrospectives.html#lacked-liked-learned">Lacked, Liked, Learned</a></li>
-                     <li><a href="retrospectives.html#bisounours">Bisounours</a></li>
-                     <li><a href="retrospectives.html#strength">Strength</a></li>
-                     <li class="section">Futurespectives : le futur</li>
-                     <li><a href="retrospectives.html#hopes-and-concerns">Hopes And Concerns</a></li>
-                     <li><a href="retrospectives.html#catapult">Catapult</a></li>
-                     <li><a href="retrospectives.html#nirvana">Nirvana</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div><!--/.nav-collapse -->
-		</div>
-	</div>
-	<!-- /.navbar -->
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="index.html">Acceuil</a></li>
+          <li><a href="presentation.html">Présentation</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rétrospectives<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="section">Rétrospectives : le passé</li>
+              <li><a href="retrospectives.html#sailboat">Sailboat</a></li>
+              <li><a href="retrospectives.html#hot-air-balloon">Hot-air Balloon</a></li>
+              <li><a href="retrospectives.html#glad-sad-mad">Glad, Sad, Mad</a></li>
+              <li><a href="retrospectives.html#lacked-liked-learned">Lacked, Liked, Learned</a></li>
+              <li><a href="retrospectives.html#bisounours">Bisounours</a></li>
+              <li><a href="retrospectives.html#strength">Strength</a></li>
+              <li class="section">Futurespectives : le futur</li>
+              <li><a href="retrospectives.html#hopes-and-concerns">Hopes And Concerns</a></li>
+              <li><a href="retrospectives.html#catapult">Catapult</a></li>
+              <li><a href="retrospectives.html#nirvana">Nirvana</a></li>
+            </ul>
+          </li>
+          <li><a href="a-propos.html">A propos</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  <!-- /.navbar -->
 
-	<!-- Header -->
-	<header id="head">
-		<div class="container">
-			<div class="row">
-				<h1 class="lead">Un outil complet pour gérer ses rétrospectives</h1>
-				<p>
-          <a href="presentation.html" class="btn btn-default btn-lg" role="button">Lire la présentation</a>
-          <a href="slides.html" class="btn btn-default btn-lg" role="button">Lire les slides</a>
+  <!-- Header -->
+  <header id="head">
+    <div class="container">
+      <div class="row">
+        <h1 class="lead">Un outil complet pour gérer ses rétrospectives</h1>
+        <p>
+          <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Introduction" class="btn btn-default btn-lg" role="button">Lire l'article</a>
+          <a href="présentation.html" class="btn btn-default btn-lg" role="button">Lire la présentation</a>
           <a href="./retro/Scrum-Retrospective-Starter-Kit.pdf" class="btn btn-action btn-lg" role="button">Télécharger le kit</a></p>
-            <h2 class="thin edge">Une aide à destination des scrum master juniors pour dompter la rétrospective</h2>
-         </div>
-		</div>
-	</header>
-	<!-- /Header -->
+          <h2 class="thin edge">Une aide à destination des scrum master juniors pour dompter la rétrospective</h2>
+        </div>
+      </div>
+    </header>
+    <!-- /Header -->
 
-	<!-- Highlights - jumbotron -->
-	<div class="jumbotron">
-		<div class="container">
+    <!-- Highlights - jumbotron -->
+    <div class="jumbotron">
+      <div class="container">
 
-			<h3 class="text-center thin">Pourquoi utiliser le "Retrospective Starter Kit"?</h3>
+        <h3 class="text-center thin">Pourquoi utiliser le "Retrospective Starter Kit"?</h3>
 
-			<div class="row">
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Scrum powered!</h4></div>
-					<div class="h-body text-center">
-						<p>Le kit rappelle les principes de base et respecte les fondamentaux. Pas de dérive ici.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Pas de temps perdu!</h4></div>
-					<div class="h-body text-center">
-						<p> Grâce aux modèles de rétrospectives annotées, la conduite de la rétrospective est facilitée</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Creative Commons</h4></div>
-					<div class="h-body text-center">
-						<p>Ce site, la présentation et les documents associés sont diffusés sous licence Creative Commons. Vous pouvez utiliser tout ou partie de ce document en mentionnant la source (CC-BY-NC-ND).</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Support de l'auteur</h4></div>
-					<div class="h-body text-center">
-						<p>N'hésitez pas à me contacter pour tout aide ou remarque concernant ce document.</p>
-					</div>
-				</div>
-			</div> <!-- /row  -->
+        <div class="row">
+          <div class="col-md-3 col-sm-6 highlight">
+            <div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Scrum powered!</h4></div>
+            <div class="h-body text-center">
+              <p>Le kit rappelle les principes de base et respecte les fondamentaux. Pas de dérive ici.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 highlight">
+            <div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Pas de temps perdu!</h4></div>
+            <div class="h-body text-center">
+              <p> Grâce aux modèles de rétrospectives annotées, la conduite de la rétrospective est facilitée</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 highlight">
+            <div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Creative Commons</h4></div>
+            <div class="h-body text-center">
+              <p>Ce site, la présentation et les documents associés sont diffusés sous licence Creative Commons. Vous pouvez utiliser tout ou partie de ce document en mentionnant la source (CC-BY-NC-ND).</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 highlight">
+            <div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Support de l'auteur</h4></div>
+            <div class="h-body text-center">
+              <p>N'hésitez pas à me contacter pour tout aide ou remarque concernant ce document.</p>
+            </div>
+          </div>
+        </div> <!-- /row  -->
 
-		</div>
-	</div>
-	<!-- /Highlights -->
-
-	<!-- Social links. @TODO: replace by link/instructions in template -->
-	<section id="social">
-		<div class="container">
-			<div class="wrapper clearfix">
-				<!-- AddThis Button BEGIN -->
-				<div class="addthis_toolbox addthis_default_style">
-				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-				<a class="addthis_button_tweet"></a>
-				<a class="addthis_button_linkedin_counter"></a>
-				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-				</div>
-				<!-- AddThis Button END -->
-			</div>
-		</div>
-	</section>
-	<!-- /social links -->
+      </div>
+    </div>
+    <!-- /Highlights -->
 
 
-	<footer id="footer" class="top-space">
+    <div id="main-content" class="container">
+      <p></p>
+      <div class="toc-macro client-side-toc-macro  conf-macro output-block hidden-outline" data-headerelements="H1,H2,H3,H4,H5,H6,H7" data-hasbody="false" data-macro-name="toc" data-macro-id="adaa8749-ec5f-4842-8cef-557dd0a27159" resolved="">
+        <ul style="">
+          <li><span class="toc-item-body" data-outline="1"><span class="toc-outline">1</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Introduction" class="toc-link">Introduction</a></span></li>
+          <li>
+            <span class="toc-item-body" data-outline="2"><span class="toc-outline">2</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Qu'estcequ'unerétrospective?" class="toc-link">Qu'est ce qu'une rétrospective?</a></span>
+            <ul style="">
+              <li><span class="toc-item-body" data-outline="2.1"><span class="toc-outline">2.1</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Définitionglobale" class="toc-link">Définition globale</a></span></li>
+              <li><span class="toc-item-body" data-outline="2.2"><span class="toc-outline">2.2</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-LarétrospectivedansScrum" class="toc-link">La rétrospective dans Scrum</a></span></li>
+            </ul>
+          </li>
+          <li><span class="toc-item-body" data-outline="3"><span class="toc-outline">3</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Larétrospective'bythebook'" class="toc-link">La rétrospective 'by the book'&nbsp;</a></span></li>
+          <li>
+            <span class="toc-item-body" data-outline="4"><span class="toc-outline">4</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Lesétapesd'unerétrospectiveréussie" class="toc-link">Les étapes d'une rétrospective réussie&nbsp;</a></span>
+            <ul style="">
+              <li><span class="toc-item-body" data-outline="4.1"><span class="toc-outline">4.1</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Choisirlarétrospective" class="toc-link">Choisir la rétrospective</a></span></li>
+              <li><span class="toc-item-body" data-outline="4.2"><span class="toc-outline">4.2</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Revuedesactions" class="toc-link">Revue des actions</a></span></li>
+              <li><span class="toc-item-body" data-outline="4.3"><span class="toc-outline">4.3</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Rappelducontexte" class="toc-link">Rappel du contexte&nbsp;</a></span></li>
+              <li><span class="toc-item-body" data-outline="4.4"><span class="toc-outline">4.4</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Etatd'esprit" class="toc-link">Etat d'esprit</a></span></li>
+              <li><span class="toc-item-body" data-outline="4.5"><span class="toc-outline">4.5</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Ajusterlechoixdelarétrospective" class="toc-link">Ajuster le choix de la rétrospective</a></span></li>
+              <li><span class="toc-item-body" data-outline="4.6"><span class="toc-outline">4.6</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Lagénérationdedonnée/larétrospective" class="toc-link">La génération de donnée / la rétrospective</a></span></li>
+              <li><span class="toc-item-body" data-outline="4.7"><span class="toc-outline">4.7</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Filtresetactions" class="toc-link">Filtres et actions</a></span></li>
+            </ul>
+          </li>
+          <li>
+            <span class="toc-item-body" data-outline="5"><span class="toc-outline">5</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Prépareretchoisirsarétrospective,notretop!" class="toc-link">Préparer et choisir sa rétrospective, notre top!</a></span>
+            <ul style="">
+              <li><span class="toc-item-body" data-outline="5.1"><span class="toc-outline">5.1</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospectives" class="toc-link">Rétrospectives</a></span></li>
+              <li><span class="toc-item-body" data-outline="5.2"><span class="toc-outline">5.2</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Futurespectives" class="toc-link">Futurespectives</a></span></li>
+            </ul>
+          </li>
+          <li>
+            <span class="toc-item-body" data-outline="6"><span class="toc-outline">6</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Préparationdelarétrospective" class="toc-link">Préparation de la rétrospective</a></span>
+            <ul style="">
+              <li>
+                <span class="toc-item-body" data-outline="6.1"><span class="toc-outline">6.1</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Commentchoisirunerétrospective?" class="toc-link">Comment choisir une rétrospective?</a></span>
+                <ul style="">
+                  <li><span class="toc-item-body" data-outline="6.1.1"><span class="toc-outline">6.1.1</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Grilledechoix" class="toc-link">Grille de choix</a></span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><span class="toc-item-body" data-outline="7"><span class="toc-outline">7</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Sailboat" class="toc-link">Rétrospective : Sailboat</a></span></li>
+          <li class="toc-empty-item"></li>
+          <li><span class="toc-item-body" data-outline="9"><span class="toc-outline">9</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Hot-airBalloon" class="toc-link">Rétrospective : Hot-air Balloon</a></span></li>
+          <li><span class="toc-item-body" data-outline="10"><span class="toc-outline">10</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Glad,Sad,Mad" class="toc-link">Rétrospective : Glad, Sad, Mad</a></span></li>
+          <li class="toc-empty-item"></li>
+          <li><span class="toc-item-body" data-outline="12"><span class="toc-outline">12</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Lacked,Liked,Learned" class="toc-link">Rétrospective : Lacked, Liked, Learned</a></span></li>
+          <li><span class="toc-item-body" data-outline="13"><span class="toc-outline">13</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Bisounours/Strengh" class="toc-link">Rétrospective : Bisounours /&nbsp;Strengh&nbsp;</a></span></li>
+          <li><span class="toc-item-body" data-outline="14"><span class="toc-outline">14</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Futurespectives:HopesAndConcern" class="toc-link">Futurespectives : Hopes And Concern</a></span></li>
+          <li><span class="toc-item-body" data-outline="15"><span class="toc-outline">15</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Futurespectives:Catapult" class="toc-link">Futurespectives : Catapult</a></span></li>
+          <li><span class="toc-item-body" data-outline="16"><span class="toc-outline">16</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Futurespectives:Nirvana" class="toc-link">Futurespectives : Nirvana</a></span></li>
+          <li><span class="toc-item-body" data-outline="17"><span class="toc-outline">17</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Conclusion" class="toc-link">Conclusion</a></span></li>
+          <li><span class="toc-item-body" data-outline="18"><span class="toc-outline">18</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Liensexternes" class="toc-link">Liens externes&nbsp;</a></span></li>
+          <li><span class="toc-item-body" data-outline="19"><span class="toc-outline">19</span>  - <a href="#Retrospective-Starter-Kit:Desrétrospectivesréussies-Références" class="toc-link">Références</a></span></li>
+        </ul>
+      </div>
+      <p></p>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Introduction">Introduction</h1>
+      <p>L'objectif de cet article et de la présentation associée est de fournir une méthode clé et des supports clés en main pour qu'un Scrum Master débutant puisse réussir sa rétrospective :</p>
+      <ul>
+        <li>Rappel des bases de la rétrospective,</li>
+        <li>Les étapes clés</li>
+        <li>Choisir une rétrospective en fonction de critères</li>
+        <li>La sélection de rétrospectives</li>
+      </ul>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Qu'estcequ'unerétrospective?">Qu'est ce qu'une rétrospective?</h1>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Définitionglobale">Définition globale</h2>
+      <p>Une rétrospective est une réunion se déroulant à la fin d'un projet pour analyser les faits et essayer d'en tirer les conclusions. C'est lors de cette réunion que l'histoire collective du projet est reconstituée à partir des éléments que chacun des membres va apporter. &nbsp;L'objectif principal est d'analyser les faits, améliorer la sagesse de l'équipe et éventuellement réaliser un plan &nbsp;d'actions.</p>
+      <p>La rétrospective est un élément essentiel dans l'agilité, on y fait référence dans le manifeste agile &nbsp;:&nbsp;"À intervalles réguliers, l'équipe réfléchit aux moyens de devenir plus efficace, puis règle et modifie son comportement en conséquence."</p>
+      <p>Par conséquent on le retrouve dans les méthologies les plus utilisées qui en dérivent :&nbsp;</p>
+      <ul>
+        <li>XP :&nbsp;<a href="http://www.extremeprogramming.org/rules/fixit.html" class="external-link" rel="nofollow">http://www.extremeprogramming.org/rules/fixit.html</a></li>
+        <li>Scrum :&nbsp;<a href="https://www.scrum.org/resources/what-is-a-sprint-retrospective" class="external-link" rel="nofollow">https://www.scrum.org/resources/what-is-a-sprint-retrospective</a></li>
+        <li>Kanban (pas de mention directe mais dans la documentation des utilisateurs):&nbsp;<a href="http://www.shmula.com/what-is-a-kanban-retrospective/22539/" class="external-link" rel="nofollow">http://www.shmula.com/what-is-a-kanban-retrospective/22539/</a></li>
+      </ul>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-LarétrospectivedansScrum">La rétrospective dans Scrum</h2>
+      <p><span class="confluence-embedded-file-wrapper" resolved=""><img class="confluence-embedded-image confluence-external-resource" src="https://www.cprime.com/wp-content/static/images/resources/Scrum_cycle.JPG" data-image-src="https://www.cprime.com/wp-content/static/images/resources/Scrum_cycle.JPG"></span></p>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Larétrospective'bythebook'">La rétrospective 'by the book'&nbsp;</h1>
+      <p>D'après le guide Scrum, le but de la rétrospective de Sprint est :</p>
+      <ul>
+        <li>D’inspecter la manière dont le dernier Sprint s'est déroulé en ce qui concerne les personnes, les relations, les processus et les outils ;</li>
+        <li>D’identifier et ordonner les éléments majeurs qui se sont bien déroulés et les améliorations potentielles ;</li>
+        <li>De créer un plan pour améliorer les processus de travail de l'Équipe Scrum</li>
+      </ul>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Lesétapesd'unerétrospectiveréussie">Les étapes d'une rétrospective réussie&nbsp;</h1>
+      <ol>
+        <li>Choisir la rétrospective (avant la réunion)</li>
+        <li>Revue des actions précédentes</li>
+        <li>Le contexte</li>
+        <li>Etat d'esprit</li>
+        <li>Ajuster le choix de rétrospective (optionnel))</li>
+        <li>La génération des données</li>
+        <li>Filtrage et actions</li>
+      </ol>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Choisirlarétrospective">Choisir la rétrospective</h2>
+      <p>Le scrum master va choisir une rétrospective lors de la préparation de la réunion.&nbsp;</p>
+      <p>Au bout d'un certain temps l'équipe va avoir envie de varier les activités. De plus la répétition régulière des mêmes formats peut entrainer un aspect routinier qui diminue l'implication de l'équipe et la pertinence des remontées d'information.<br>Souvent c'est le Scrum Master qui va décider de l'activité à réaliser et le choix d'une rétrospective adaptée à l'esprit de l'équipe à ce moment et au déroulement général du sprint peut réellement améliorer la communication et permettre à l'équipe de trouver des actions positives y compris à la sortie de sprints compliqués ou perçus comme 'ratés'.<br>C'est ici que cet article est intéressant puisque il vous propose une sélection de formats pertinents avec une grille d'aide à la décision.</p>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Revuedesactions">Revue des actions</h2>
+      <p>Etape primordiale, la revue des actions permet de savoir ce qui a été réalisé et ce qui doit être encore fait. Logiquement toutes les actions qui ont été réalisées ont rendu l'équipe meilleure.</p>
+      <p>Il faut donc prendre du temps pour le souligner.&nbsp;</p>
+      <p>Les actions non réalisées des sprint précédent doivent automatquement être intégrées dans les actions du Sprint en cours. Si une action n'est pas réalisée sur les 2 Sprints suivants, il n'y a pas de raisons de la garder.</p>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Rappelducontexte">Rappel du contexte&nbsp;</h2>
+      <div><span style="color: rgb(34,34,34);">La rétrospective est une réunion. Elle répond donc aux mêmes règles, on doit définir le contexte.</span></div>
+      <div>Quelques exemples :</div>
+      <ul>
+        <li>Nous sommes au Sprint 31, plus que deux Sprint avant la mise en production.</li>
+        <li>Lors de ce Sprint nous avons mis en production la feature X.</li>
+        <li>Lors de ce sprint monsieur Paul à intégré l'équipe.</li>
+        <li>Le management&nbsp;</li>
+      </ul>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Etatd'esprit">Etat d'esprit</h2>
+      <div>L'idée de cette étape est d'analyser l'état d'esprit des participants et de savoir comment ils se sentent par rapport au sprint qui vient de se dérouler.</div>
+      <div>C'est un travail important car cela permet de se focaliser sur certains événements.</div>
+      <div>Le facilitateur de la réunion dispose de plusieurs outils pour sonder les participants. Il devra analyser aussi bien ce qu'ont dit les participants mais aussi se concentrer sur les non dit (communication non verbale).</div>
+      <div>Outils à disposition :</div>
+      <ul>
+        <li>Questions directes</li>
+        <li>Météo du Sprint</li>
+        <li>Health Check</li>
+        <li>Radar du bonheur</li>
+        <li>TeamMood.</li>
+      </ul>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Ajusterlechoixdelarétrospective">Ajuster le choix de la rétrospective</h2>
+      <p>Avec l'expérience, un Scrum Master va connaitre plusieurs formats de rétrospectives relativement similaires (orientée sur les actions, &nbsp;sur l'analyse des points faibles, positivantes ...). Dans le cadre d'équipes stables et qui se connaissent bien, le Scrum&nbsp;Master peut alors choisir non pas une rétrospective précise en phase 1, mais une catégorie de rétrospective, et ajuster son choix en fonction de sa perception de l'équipe au moment de la réunion, notamment&nbsp;&nbsp;dans les étapes 2, 3, 4 et 5</p>
+      <p>Par exemple, on a choisi une activité orientée analyse des problèmes car le sprint a été difficile. Plusieurs rétrospectives mettent plus particulièrement l'accent sur ce point :&nbsp;</p>
+      <p><a href="http://www.funretrospectives.com/known-issues/" class="external-link" rel="nofollow">http://www.funretrospectives.com/known-issues/</a>&nbsp;,&nbsp;</p>
+      <p><a href="http://www.funretrospectives.com/www-activity-worked-well-kinda-worked-didnt-work/" class="external-link" rel="nofollow">http://www.funretrospectives.com/www-activity-worked-well-kinda-worked-didnt-work/</a></p>
+      <p><a href="http://www.funretrospectives.com/dealing-with-failure-fmea/" class="external-link" rel="nofollow">http://www.funretrospectives.com/dealing-with-failure-fmea/</a></p>
+      <p>etc ..</p>
+      <p>Dans ce cas, par exemple, en imaginant que l'équipe est plutôt dans un état d'esprit négatif, ressassant les problèmes rencontrés etc, peut être qu'une rétrospective axée sur la positivation peut être pertinente : (<a href="http://retrospectives-agiles.fr/post/39582584304/la-r%C3%A9trospective-bisounours" class="external-link" rel="nofollow">http://retrospectives-agiles.fr/post/39582584304/la-r%C3%A9trospective-bisounours</a>).</p>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Lagénérationdedonnée/larétrospective"><span style="font-size: 20.0px;">La génération de donnée / la rétrospective</span></h2>
+      <div>
+        Dans cette étape l'équipe va partager l'information, parler de ce qui s'est bien passé de ce qui s'est mal passé.&nbsp;
+        <div class="gmail_default">Il s'agit d'apporter la vision de chaque membre afin de créer une histoire commune du sprint. &nbsp;Dans cette étapes, les post it et les marqueurs seront vos plus fidèles alliés.&nbsp;</div>
+        <div class="gmail_default">Ils permettront de poser les idées et d'alimenter le débat.&nbsp;</div>
+      </div>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Filtresetactions"><span style="font-size: 20.0px;">Filtres et actions</span></h2>
+      <p>A l'issue d'une rétrospective, l'objectif est d'obtenir un consensus sur les points perçus comme les plus importants parmi les sujets remontés à l'étape "génération de données".</p>
+      <p>Cela permet à chacun des membres d'exprimer leur avis sur les axes d'amélioration qu'il considère les plus efficaces ou urgents.</p>
+      <p>Les actions ayant été exprimées doivent ensuite être filtrées et priorisées, afin de n'en retenir que quelques unes (de 1 à 3 à peu près) comme conclusion</p>
+      <p>La majorité des formats de rétrospectives appliquent cette étape de filtrage via une discussion de groupe ou une séance de vote individuel.</p>
+      <p>Ces actions doivent être des décisions applicables directement par l'équipe avec un reponsable défini à l'avance et ce dans un objectif d'amélioration continue.&nbsp;</p>
+      <p>Un bon moyen mnémotechnique pour créer des actions efficaces et d'appliquer le modèle S.M.A.R.T.</p>
+      <ul>
+        <li>S : Spécifique,</li>
+        <li>M : Mesurable,</li>
+        <li>A : Acceptable,</li>
+        <li>R : Réalisable,</li>
+        <li>T : Temporellement définie</li>
+      </ul>
+      <p>Les actions décidées en rétrospectives doivent principalement concerner l'équipe. De temps en temps, les membres peuvent également noter des actions pour d'autres équipes si celles ci sont réalisables. Il s'agit souvent des blocages rencontrés par l'équipe au cours du Sprint (impediments).</p>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Prépareretchoisirsarétrospective,notretop!">Préparer et choisir sa rétrospective, notre top!</h1>
+      <p>La rétrospective par défaut peut répondre à votre besoin. Cela dit, une équipe peut ressentir le besoin ou l'envie de tester de nouvelles façon d'aborder les sujets en rétrospectives.&nbsp;</p>
+      <p>Sources :</p>
+      <ul>
+        <li>Fun retrospective</li>
+        <li><a href="http://retrospectivewiki.org/index.php?title=Retrospective_Plans" class="external-link" rel="nofollow">http://retrospectivewiki.org/index.php?title=Retrospective_Plans<br></a></li>
+      </ul>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospectives">Rétrospectives</h2>
+      <ul>
+        <li>Sailboat</li>
+        <li class="entry-title">Hot-air Balloon</li>
+        <li>Glad, Sad, Mad</li>
+        <li>Lacked Liked Learned</li>
+        <li>Bisounours</li>
+        <li>Strengh&nbsp;</li>
+      </ul>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Futurespectives">Futurespectives</h2>
+      <p>La futurspective est un type particulier de rétrospective. En effet la plupart du temps on veut se concentrer sur ce qu'il s'est passé mais &nbsp;de temps en temps il est intéressant de faire en sorte que l'équipe se concentre sur un futur relativement proche afin de déceler les obstacles ou de dessiner un objectif commun.</p>
+      <ul>
+        <li>Hopes And Concern</li>
+        <li>Catapult</li>
+        <li>Nirvana</li>
+      </ul>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Préparationdelarétrospective">Préparation de la rétrospective</h1>
+      <h2 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Commentchoisirunerétrospective?">Comment choisir une rétrospective?</h2>
+      <p>Choisir une rétrospectives dépend de la personnalité des Scrum Master et des équipes.Cet article présente une sélection pertinente et avance qu'un Scrum Master doit maitriser quelques formats, ce qui lui permet d'améliorer ses compétences en conduire de réunion, animation, synthèse, etc...</p>
+      <p>Voici une grille avec différents critères permettant de choisir la rétrospective adaptée.</p>
+      <h3 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Grilledechoix">Grille de choix</h3>
+      <div class="table-wrap">
+        <table class="wrapped confluenceTable tablesorter tablesorter-default stickyTableHeaders" role="grid" resolved="" style="padding: 0px;">
+          <colgroup>
+            <col>
+            <col>
+          </colgroup>
+          <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 353.996px; z-index: 3; width: 358px; top: 0px;">
+            <tr role="row" class="tablesorter-headerRow">
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Caratéristique: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Caratéristique</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label=": No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner"><br></div>
+              </th>
+            </tr>
+          </thead>
+          <thead class="tableFloatingHeader" style="display: none;">
+            <tr role="row" class="tablesorter-headerRow">
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Caratéristique: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Caratéristique</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label=": No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner"><br></div>
+              </th>
+            </tr>
+          </thead>
+          <tbody aria-live="polite" aria-relevant="all">
+            <tr role="row">
+              <td class="confluenceTd">Orientation</td>
+              <td class="confluenceTd">
+                <p>Futur? Rétrospective ?</p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td class="confluenceTd">Objectifs</td>
+              <td class="confluenceTd">
+                <p>Problèmes ?&nbsp;Forces ? Dangers?</p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td colspan="1" class="confluenceTd">Humeur</td>
+              <td colspan="1" class="confluenceTd">
+                <p>oui ou non? positivante?&nbsp;</p>
+              </td>
+            </tr>
+            <tr role="row">
+              <td colspan="1" class="confluenceTd">
+                <p>Expérience en agilité</p>
+              </td>
+              <td colspan="1" class="confluenceTd">
+                <p>Junior?&nbsp;Confirmed? Senior?</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><br></p>
+      <div class="table-wrap">
+        <table class="wrapped confluenceTable tablesorter tablesorter-default stickyTableHeaders" role="grid" resolved="" style="padding: 0px;">
+          <colgroup>
+            <col style="width: 164.0px;">
+            <col style="width: 108.0px;">
+            <col style="width: 196.0px;">
+            <col style="width: 84.0px;">
+            <col style="width: 126.0px;">
+          </colgroup>
+          <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 353.996px; z-index: 3; width: 676px; top: 0px;">
+            <tr role="row" class="tablesorter-headerRow">
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Rétrospective: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Rétrospective</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Orientation: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Orientation</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Objectifs: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Objectifs</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Humeur: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Humeur</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Expérience en agilité: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Expérience en agilité</div>
+              </th>
+            </tr>
+          </thead>
+          <thead class="tableFloatingHeader" style="display: none;">
+            <tr role="row" class="tablesorter-headerRow">
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Rétrospective: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Rétrospective</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Orientation: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Orientation</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Objectifs: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Objectifs</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Humeur: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Humeur</div>
+              </th>
+              <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Expérience en agilité: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Expérience en agilité</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody aria-live="polite" aria-relevant="all">
+            <tr role="row">
+              <td class="confluenceTd">Sailboat</td>
+              <td class="confluenceTd">Rétrospective</td>
+              <td class="confluenceTd">Forces, faiblesses, menaces</td>
+              <td class="confluenceTd">non</td>
+              <td class="confluenceTd">Confirmed</td>
+            </tr>
+            <tr role="row">
+              <td class="confluenceTd">
+                <p>Hot air balloon</p>
+              </td>
+              <td class="confluenceTd">Rétrospective</td>
+              <td class="confluenceTd">Forces, faiblesses</td>
+              <td class="confluenceTd">non</td>
+              <td class="confluenceTd">Junior</td>
+            </tr>
+            <tr role="row">
+              <td class="confluenceTd">Glad, sad, mad</td>
+              <td class="confluenceTd">Rétrospective</td>
+              <td class="confluenceTd"><br></td>
+              <td class="confluenceTd">oui</td>
+              <td class="confluenceTd">Confirmed</td>
+            </tr>
+            <tr role="row">
+              <td class="confluenceTd">Lacked, Liked, Learned</td>
+              <td class="confluenceTd">Rétrospective</td>
+              <td class="confluenceTd"><br></td>
+              <td class="confluenceTd">oui</td>
+              <td class="confluenceTd">Confirmed</td>
+            </tr>
+            <tr role="row">
+              <td colspan="1" class="confluenceTd">Bisounours</td>
+              <td colspan="1" class="confluenceTd">Rétrospective</td>
+              <td colspan="1" class="confluenceTd"><br></td>
+              <td colspan="1" class="confluenceTd">oui, positif</td>
+              <td colspan="1" class="confluenceTd">Junior</td>
+            </tr>
+            <tr role="row">
+              <td colspan="1" class="confluenceTd">Strengh</td>
+              <td colspan="1" class="confluenceTd">Rétrospective</td>
+              <td colspan="1" class="confluenceTd">Forces&nbsp;</td>
+              <td colspan="1" class="confluenceTd">oui, positif</td>
+              <td colspan="1" class="confluenceTd">Senior</td>
+            </tr>
+            <tr role="row">
+              <td colspan="1" class="confluenceTd">Catapult</td>
+              <td colspan="1" class="confluenceTd">Futurspective</td>
+              <td colspan="1" class="confluenceTd">Forces, faiblesses</td>
+              <td colspan="1" class="confluenceTd">non</td>
+              <td colspan="1" class="confluenceTd">Junior</td>
+            </tr>
+            <tr role="row">
+              <td colspan="1" class="confluenceTd">Hopes and Concerns</td>
+              <td colspan="1" class="confluenceTd">Futurspective</td>
+              <td colspan="1" class="confluenceTd"><br></td>
+              <td colspan="1" class="confluenceTd">oui</td>
+              <td colspan="1" class="confluenceTd">Junior</td>
+            </tr>
+            <tr role="row">
+              <td colspan="1" class="confluenceTd">Nirvana</td>
+              <td colspan="1" class="confluenceTd">Futurspective</td>
+              <td colspan="1" class="confluenceTd"><br></td>
+              <td colspan="1" class="confluenceTd">oui, positif</td>
+              <td colspan="1" class="confluenceTd">Senior</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-		<div class="footer1">
-			<div class="container">
-				<div class="row">
+      <header class="page-header">
+        <h3 class="page-title" id="retrospectives">Rétrospectives</h3>
+      </header>
+      <h5 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Sailboat">Anchors and Engine / Sailboat</h5>
+      <a target="_blank" href="./retro/Scrum-Retrospective-Starter-Kit_Sailboat.jpg">  <img src="./retro/tn/Scrum-Retrospective-Starter-Kit_Sailboat_tn.jpg" alt="Scrum-Retrospective-Starter-Kit_Sailboat"> </a>
 
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Contact</h3>
-						<div class="widget-body">
-								<a href="mailto:#">mikael.krok***at***g*m*a*i*l*.com</a><br>
-							</p>
-						</div>
-					</div>
+      <h5 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Hot-airBalloon">Hot-air Balloon</h5>
+      <a target="_blank" href="retro/Scrum-Retrospective-Starter-Kit_Hot-Air-Balloon.jpg">  <img src="retro/tn/Scrum-Retrospective-Starter-Kit_Hot-Air-Balloon_tn.jpg" alt="Scrum-Retrospective-Starter-Kit_Hot-Air-Balloon"> </a>
+      <h5 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Glad,Sad,Mad">Glad, Sad, Mad</h5>
+      <a target="_blank" href="retro/Scrum-Retrospective-Starter-Kit_Glad-Sad-Mad.jpg">  <img src="retro/tn/Scrum-Retrospective-Starter-Kit_Glad-Sad-Mad_tn.jpg" alt="Scrum-Retrospective-Starter-Kit_Glad-Sad-Mad"> </a>
+      <h5 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Lacked,Liked,Learned">Lacked Liked Learned</h5>
+      <a target="_blank" href="retro/Scrum-Retrospective-Starter-Kit_Lacked-Liked-Learned.jpg">  <img src="retro/tn/Scrum-Retrospective-Starter-Kit_Lacked-Liked-Learned_tn.jpg" alt="Scrum-Retrospective-Starter-Kit_Lacked-Liked-Learned"> </a>
+      <h5 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Rétrospective:Bisounours/Strengh">Bisounours / Strengh</h5>
+      <a target="_blank" href="retro/Scrum-Retrospective-Starter-Kit_Bisounours-Strength.jpg">  <img src="retro/tn/Scrum-Retrospective-Starter-Kit_Bisounours-Strength_tn.jpg" alt="Scrum-Retrospective-Starter-Kit_Bisounours-Strength"> </a>
+      <header class="page-header">
+        <h3 class="page-title" id="futurspectives">Futurspectives</h3>
+      </header>
+      <h5 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Futurespectives:HopesAndConcern">Hopes And Concerns</h5>
+      <a target="_blank" href="retro/Scrum-Retrospective-Starter-Kit_Hopes-And-Concerns.jpg">  <img src="retro/tn/Scrum-Retrospective-Starter-Kit_Hopes-And-Concerns_tn.jpg" alt="Scrum-Retrospective-Starter-Kit_Hopes-And-Concerns"> </a>
+      <h5 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Futurespectives:Catapult">Catapult</h5>
+      <a target="_blank" href="retro/Scrum-Retrospective-Starter-Kit_Catapult.jpg">  <img src="retro/tn/Scrum-Retrospective-Starter-Kit_Catapult_tn.jpg" alt="Scrum-Retrospective-Starter-Kit_Catapult"> </a>
+      <h5 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Futurespectives:Nirvana">Nirvana</h5>
+      <a target="_blank" href="retro/Scrum-Retrospective-Starter-Kit_Nirvana.jpg">  <img src="retro/tn/Scrum-Retrospective-Starter-Kit_Nirvana_tn.jpg" alt="Scrum-Retrospective-Starter-Kit_Nirvana"> </a>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Conclusion">Conclusion</h1>
+      <p>Une rétrospective réussie est une étape importante dans la construction d'une équipe agile efficace. Côté humain, elle offre un cadre ou les équipiers peuvent échanger.&nbsp; Travailler en groupe n'est pas un exercice évident, surtout si l'équipe est junior ou sI elle vient d'intégrer de nouveaux membres. Pourtant, il est primordial que tout le monde ait la possibilité de parler. Il faut donc construire un environnement positif ou règne un climat de confiance.&nbsp;Le scrum master doit agir comme un chef d'orchestre : assurer le tempo de la réunion et permettre à tous les membres de s'exprimer.</p>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Liensexternes">Liens externes&nbsp;</h1>
+      <p>Le site web :&nbsp;<a href="http://retrospective-starter-kit.tk" class="external-link" rel="nofollow">retrospective-starter-kit.tk</a></p>
+      <p><em>&nbsp; &nbsp; Licence creative commons :&nbsp;CC-BY-NC-ND</em></p>
+      <p>La version présentation :&nbsp;<a href="http://slides.com/kenji_getpowered/scrum-retrospective-starter-kit#/" class="external-link" rel="nofollow">http://slides.com/kenji_getpowered/scrum-retrospective-starter-kit#/</a></p>
+      <p><em>&nbsp; Licence creative commons :&nbsp;CC-BY-NC-ND</em></p>
+      <h1 id="Retrospective-Starter-Kit:Desrétrospectivesréussies-Références">Références</h1>
 
-					<div class="col-md-3 widget">
-						<h3 class="widget-title">Follow me</h3>
-						<div class="widget-body">
-							<p class="follow-me-icons">
-								<a href="https://twitter.com/mikaelkrok"><i class="fa fa-twitter fa-2"></i></a>
-								<a href="http://mikaelkrok.fr"><i class="fa fa-dribbble fa-2"></i></a>
-								<a href="https://github.com/kenji-getpowered/"><i class="fa fa-github fa-2"></i></a>
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-6 widget">
-						<h3 class="widget-title">Vos avis m'interessent</h3>
-						<div class="widget-body">
-							<p>Avez vous rencontré des difficultés pendant vos rétrospectives? Avez vous des trucs et astuces? N'hésitez pas à m'envoyer vos commentaires</p>
-                     <p>Logo from <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a></p>
-                     <p>Icons from <a href="www.flaticon.com">FlatIcon.com</a></p>
-                  </div>
-					</div>
-
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="simplenav">
-               <a href="index.html">Acceuil</a> |
-					<a href="presentation.html">Présentation</a> |
-					<a href="slides.html">Slides</a> |
-					<a href="retrospectives.html">Rétrospectives</a> |
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-6 widget">
-						<div class="widget-body">
-							<p class="text-right">
-								Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a>
-							</p>
-						</div>
-					</div>
-
-				</div> <!-- /row of widgets -->
-			</div>
-		</div>
-
-	</footer>
+      <ul>
+        <li><a href="http://www.lifeisaseriousgame.com/icebreaker-jeux-reunion-apprendre-se-connaitre/" class="external-link" rel="nofollow">http://www.lifeisaseriousgame.com/icebreaker-jeux-reunion-apprendre-se-connaitre/</a></li>
+        <li><a href="https://www.frontrowagile.com/blog/posts/28-choosing-a-retrospective-topic" class="external-link" rel="nofollow">https://www.frontrowagile.com/blog/posts/28-choosing-a-retrospective-topic</a></li>
+        <li><a href="http://www.caroli.org/a-7-step-agenda-for-effective-retrospectives/" class="external-link" rel="nofollow">http://www.caroli.org/a-7-step-agenda-for-effective-retrospectives/</a></li>
+        <li><a href="https://www.thoughtworks.com/insights/blog/7-step-agenda-effective-retrospective" class="external-link" rel="nofollow">https://www.thoughtworks.com/insights/blog/7-step-agenda-effective-retrospective</a></li>
+        <li><a href="http://www.funretrospectives.com/known-issues/" class="external-link" rel="nofollow">http://www.funretrospectives.com/known-issues/</a>&nbsp;</li>
+        <li><a href="http://retrospectivewiki.org/index.php?title=Retrospective_Plans" class="external-link" rel="nofollow">http://retrospectivewiki.org/index.php?title=Retrospective_Plans</a></li>
+      </ul>
+      <p><br></p>
+      <p><br></p>
+    </div>
+    <!-- Social links
+    <section id="social">
+    <div class="container">
+    <div class="wrapper clearfix">
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+      <a class="addthis_button_tweet"></a>
+      <a class="addthis_button_linkedin_counter"></a>
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    </div>
+    <!-- AddThis Button END -->
+  </div>
+</div>
+</section>
+<!-- /social links -->
 
 
+<footer id="footer" class="top-space">
+
+  <div class="footer1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 widget">
+          <h3 class="widget-title">Contact</h3>
+          <div class="widget-body">
+            <a href="mailto:#">mikael.krok***at***g*m*a*i*l*.com</a><br>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3 widget">
+        <h3 class="widget-title">Follow me</h3>
+        <div class="widget-body">
+          <p class="follow-me-icons">
+            <a href="https://twitter.com/mikaelkrok"><i class="fa fa-twitter fa-2"></i></a>
+            <a href="http://mikaelkrok.fr"><i class="fa fa-dribbble fa-2"></i></a>
+            <a href="https://github.com/kenji-getpowered/"><i class="fa fa-github fa-2"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 widget">
+        <h3 class="widget-title">Vos avis m'interessent</h3>
+        <div class="widget-body">
+          <p>Avez vous rencontré des difficultés pendant vos rétrospectives? Avez vous des trucs et astuces? N'hésitez pas à m'envoyer vos commentaires</p>
+          <p>Logo from <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a></p>
+          <p>Icons from <a href="www.flaticon.com">FlatIcon.com</a></p>
+        </div>
+      </div>
+
+    </div> <!-- /row of widgets -->
+  </div>
+</div>
+
+<div class="footer2">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 widget">
+        <div class="widget-body">
+          <p class="simplenav">
+            <a href="index.html">Acceuil</a> |
+            <a href="presentation.html">Présentation</a> |
+            <a href="slides.html">Slides</a> |
+            <a href="retrospectives.html">Rétrospectives</a> |
+            <a href="a-propos.html">A propos</a> |
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 widget">
+        <div class="widget-body">
+          <p class="text-right">
+            Copyright &copy; 2014, Your name. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a>
+          </p>
+        </div>
+      </div>
+
+    </div> <!-- /row of widgets -->
+  </div>
+</div>
+
+</footer>
 
 
 
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/template.js"></script>
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/headroom.min.js"></script>
+<script src="assets/js/jQuery.headroom.min.js"></script>
+<script src="assets/js/template.js"></script>
 </body>
 </html>
